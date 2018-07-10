@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- <link rel="stylesheet" href="bootstrap1/dist/css/bootstrap.min.css"> -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- custom css import -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- Import sass compiled css -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+    <title>Bootstrap-Assinment</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Brand logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#assinmentNavbar" aria-controls="assinmentNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-colapse-menu" id="assinmentNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Drop down 1</a>
+                            <a class="dropdown-item" href="#">Drop down 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another Drop down 1</a>
+                            <a class="dropdown-item" href="#">Another Drop down 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+    <!-- // Header -->
+    <!-- Carousel -->
+    <section id="hero">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-home" data-slide-to="1"></li>
+                <li data-target="#carousel-home" data-slide-to="2"></li>
+                <li data-target="#carousel-home" data-slide-to="3"></li>
+                <li data-target="#carousel-home" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/intro-carousel/1.jpg" alt="Richard Branson">
+                    <div class="carousel-caption">
+                        <h3>Richard Branson, Founder of Virgin Group</h3>
+                        <p>Business opportunities are like buses, there’s always another one coming.</p>
+                        <a href="#featured-services" class="btn btn-get-started" role="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/intro-carousel/2.jpg" alt="Walt Disney">
+                    <div class="carousel-caption">
+                        <h3>Walt Disney, Founder of The Walt Disney Company</h3>
+                        <p>All our dreams can come true – if we have the courage to pursue them.</p>
+                        <a href="#featured-services" class="btn btn-get-started" role="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/intro-carousel/3.jpg" alt="Steve Jobs">
+                    <div class="carousel-caption">
+                        <h3>Steve Jobs, Founder of Apple, Inc.</h3>
+                        <p>Choose a job that you love and you will never have to work a day in your life</p>
+                        <a href="#featured-services" class="btn btn-get-started" role="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/intro-carousel/4.jpg" alt="Henry Ford">
+                    <div class="carousel-caption">
+                        <h3>Henry Ford, Founder of Ford Motor Company</h3>
+                        <p>A business that makes nothing but money is a poor business.</p>
+                        <a href="#featured-services" class="btn btn-get-started" role="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/intro-carousel/5.jpg" alt="Sam Walton">
+                    <div class="carousel-caption">
+                        <h3>Sam Walton, Founder of Walmart</h3>
+                        <p>Your most unhappy customers are your greatest source of learning.</p>
+                        <a href="#featured-services" class="btn btn-get-started" role="button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- // Carousel-->
+
+    <main id="main">
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 box">
+                        <i class="service-fontawesome fa fa-bookmark-o"></i>
+                        <h4 class="title">
+                            <a href="">Lorem ipsum dolor</a>
+                        </h4>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae numquam adipisci, porro
+                            magnam similique non laboriosam iste est dignissimos possimus iure expedita necessitatibus cum
+                            praesentium placeat architecto quis. Sequi.</p>
+                    </div>
+                    <div class="col-lg-4 box box-mid">
+                        <i class="service-fontawesome fa fa-clock-o"></i>
+                        <h4 class="title">
+                            <a href="">Amet consectetur adipisicing</a>
+                        </h4>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae numquam adipisci, porro
+                            magnam similique non laboriosam iste est dignissimos possimus iure expedita necessitatibus cum
+                            praesentium placeat architecto quis. Sequi.</p>
+                    </div>
+                    <div class="col-lg-4 box">
+                        <i class="service-fontawesome fa fa-heart-o"></i>
+                        <h4 class="title">
+                            <a href="">Est dignissimos possimus</a>
+                        </h4>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae numquam adipisci, porro
+                            magnam similique non laboriosam iste est dignissimos possimus iure expedita necessitatibus cum
+                            praesentium placeat architecto quis. Sequi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // #services -->
+
+        <section id="aboutus">
+            <div class="container">
+                <div class="section-header">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi rerum magnam odit voluptas reiciendis?
+                        Officiis ratione ex inventore quam aliquam? Officiis aut harum nihil corporis incidunt officia, ipsum
+                        facilis facere?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, quam iusto. Minima, aliquam. Dicta
+                        error nihil aspernatur perferendis aliquid blanditiis quo labore sed hic quae, repellat totam. Deleniti,
+                        amet magni.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="img/about-mission.jpg" alt="Mission image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" data-original-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam eum amet cupiditate consequuntur
+                                nam omnis deserunt dicta voluptatibus, culpa, saepe ipsum commodi labore. Consequatur asperiores
+                                nesciunt sint alias. Facilis." rel="tooltip">Tooltip Implemented</a>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam eum amet cupiditate consequuntur
+                                nam omnis deserunt dicta voluptatibus, culpa, saepe ipsum commodi labore. Consequatur asperiores
+                                nesciunt sint alias. Facilis.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/about-plan.jpg" alt="Plan image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" data-original-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore nisi earum sit adipisci
+                                natus dolorum eum quis hic quia, sed temporibus illo rem quo excepturi veniam, consequatur
+                                tempora unde." rel="tooltip">Our Plan</a>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore nisi earum sit adipisci
+                                natus dolorum eum quis hic quia, sed temporibus illo rem quo excepturi veniam, consequatur
+                                tempora unde.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/about-vision.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" data-original-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore nisi earum sit adipisci
+                                natus dolorum eum quis hic quia, sed temporibus illo rem quo excepturi veniam, consequatur
+                                tempora unde." rel="tooltip">Our Vision</a>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident animi amet illo exercitationem
+                                dolorem dolore iste quo esse dolor excepturi inventore, adipisci molestiae. Cumque esse commodi
+                                tempore provident suscipit dignissimos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- // #aboutus -->
+
+        <section id="ourskill">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Our Skills</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit soluta minima accusamus ullam eligendi
+                        tempora! Voluptates eius id dolorum reprehenderit voluptatem ipsam, doloremque recusandae iusto quis
+                        temporibus possimus ullam.</p>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <span class="skill">HTML &amp; CSS 100%</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <span class="skill">JavaScript 75%</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <span class="skill">Java 50%</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <span class="skill">C# 25%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // #ourskill -->
+
+        <section id="testimonial">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Tesimonials</h3>
+                    <div id="testimonialIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#testimonialIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#testimonialIndicators" data-slide-to="1"></li>
+                            <li data-target="#testimonialIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-item">
+                                    <img src="img/testimonial-1.jpg" alt="Testimonial 1">
+                                    <h5>Kishor</h5>
+                                    <p class="text-secondary">Director</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero magni ad id molestias
+                                        libero enim exercitationem earum, quod omnis ducimus fugit sint, quibusdam cum officia
+                                        iure, voluptate accusantium iste eaque!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item">
+                                    <img src="img/testimonial-2.jpg" alt="Testimonial 2">
+                                    <h5>Shital</h5>
+                                    <p class="text-secondary">Designer</p>
+                                    <p>Consectetur adipisicing elit. Fugit iste, consectetur quibusdam corrupti nulla in, officiis
+                                        nihil ipsa aliquam recusandae tempora beatae veniam repudiandae similique cum expedita
+                                        dicta! Aliquid, explicabo.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item">
+                                    <img src="img/testimonial-3.jpg" alt="Testimonial 3">
+                                    <h5>Suhani</h5>
+                                    <p class="text-secondary">Assistant Director</p>
+                                    <p>Praesentium atque vitae eaque? Animi cumque assumenda consectetur ea placeat nam asperiores
+                                        ipsa eum aperiam ipsum pariatur, explicabo rem et nisi nemo.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#testimonialIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#testimonialIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contactus">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Contact Us</h3>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="yourname">Name</label>
+                            <input type="text" class="form-control" id="yourname" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="youremail">Email</label>
+                            <input type="email" class="form-control" id="youremail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Provide subject">
+                    </div>
+                    <div class="form-row">
+                        <label for="comment">Message</label>
+                        <textarea name="comment" id="comment" class="form-control"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class=" contactusSendBtn">
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div id="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <h4>About Us</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda eaque quis iste aliquid provident
+                            odio delectus voluptatem praesentium est nostrum beatae, cum quibusdam magnam et sapiente incidunt
+                            quos deleniti ipsam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi enim, itaque
+                            repellat odio praesentium amet quidem ipsam ullam. Rem eveniet quasi fugiat earum provident consequuntur
+                            a libero voluptatum quisquam facere.</p>
+
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4>Useful Links</h4>
+                        <ul class="footer-links">
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Service</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Team</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Organisation</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Expo</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4>Contact Info</h4>
+                        <p>2870, Building Virgo, Bagmane Constellation Business Park, Outer Ring Road, Ferns City, Marathahalli,
+                            Doddanekundi, Bengaluru, Karnataka 560037</p>
+                        <p>Phone: +1 5589 55488 55</p>
+                        <p>Email: info@example.com</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4>Our Newsletter</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, facere, aut nisi quisquam quos
+                            ab aperiam doloremque reprehenderit iusto placeat sint.! Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Animi molestiae itaque aliquid modi quia ut dolorem, est vero quisquam, quidem
+                            debitis maiores fugiat rerum reiciendis </p>
+                        <form class="form-subscribe">
+                            <input class="form-control" type="email" placeholder="Email" aria-label="Email" />
+                            <button class="btn btn-success" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="socialMedia">
+            <div class="container">
+                <div class="row">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-vimeo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-ravelry"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap1/dist/js/bootstrap.min.js"></script> -->
+
+    
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+    <!-- custom js import -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
